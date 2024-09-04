@@ -5,9 +5,12 @@ import { ReactNode } from "react"
 
 const providers = ({children}:{children:ReactNode}) => {
   return (
-    <div>
-      
-    </div>
+   <ThemeProvider enableSystem
+   attribute="class"
+   defaultTheme="system"
+   disableTransitionOnChange>
+    {children}
+   </ThemeProvider>
   )
 }
 
